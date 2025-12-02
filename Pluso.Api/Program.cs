@@ -17,7 +17,8 @@ builder.Services.AddScoped<ITenantRepository, TenantRepository>();
 builder.Services.AddScoped<ITenantService, TenantService>();
 
 
-
+builder.Services.AddScoped<ITenantSubscriptionRepository, TenantSubscriptionRepository>();
+builder.Services.AddScoped<ITenantSubscriptionService, TenantSubscriptionService>();
 
 var app = builder.Build();
 
